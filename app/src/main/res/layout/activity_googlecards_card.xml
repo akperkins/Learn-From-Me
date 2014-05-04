@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="16dp"
+    android:layout_gravity="center"
+    android:clickable="false">
+
+    <TextView
+        android:id="@+id/tv_recipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/testRecipient"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@android:color/secondary_text_dark"
+        android:maxLines="2"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_recipient"
+        android:layout_alignParentLeft="true"
+        android:text="@string/testMessage"
+        android:maxLines="5"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/testSignature"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:layout_below="@+id/tv_message"
+        android:layout_alignRight="@+id/tv_message"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/tv_votes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

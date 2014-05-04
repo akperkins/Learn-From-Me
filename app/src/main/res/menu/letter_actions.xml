@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/act_letter_share"
+        android:icon="@drawable/ic_action_share"
+        android:title="share letter"
+        android:orderInCategory="5"
+        android:showAsAction="always" />
+</menu>

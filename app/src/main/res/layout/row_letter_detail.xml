@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@android:color/background_light"
+    android:clickable="false"
+    android:padding="5dp">
+
+
+
+    <TextView
+        android:id="@+id/tv_recipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/ib_upVote"
+        android:gravity="center_horizontal"
+        android:singleLine="false"
+        android:text="@string/testRecipient"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_signature"
+        android:layout_alignRight="@+id/tv_signature"
+        android:layout_below="@+id/ib_upVote"
+        android:background="#e7e7df"
+        android:gravity="center_horizontal"
+        android:text="@string/testMessage"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_message"
+        android:gravity="right"
+        android:text="@string/testSignature"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#777" />
+
+    <ImageButton
+        android:id="@+id/ib_upVote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/score"
+        android:src="@drawable/ic_action_good" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/tv_recipient"
+        android:text="30000" />
+
+    <ListView
+        android:id="@+id/lv_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_signature"
+        android:clickable="false" />
+
+    <EditText
+        android:id="@+id/et_newComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_comments"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="Enter your comment here..."
+        android:inputType="textMultiLine" />
+
+
+</RelativeLayout>

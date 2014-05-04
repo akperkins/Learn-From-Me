@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_recipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:textColor="@android:color/secondary_text_dark"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/tv_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score: 0"/>
+
+
+    <TextView
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:maxLines="5"
+        android:paddingBottom="5dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:background="#f2f2f2" />
+
+    <TextView
+        android:id="@+id/tv_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text=""
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/secondary_text_dark"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/ll_voteSystem"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_good"
+            android:id="@+id/ib_upVote"
+            android:background="@drawable/rounded_bordered_click_button"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_bad"
+            android:background="@drawable/rounded_bordered_click_button"
+            android:id="@+id/ib_downVote"
+            android:layout_weight="1"
+          />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_thanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:visibility="gone"
+        android:text="Thanks for voting!"/>
+
+</LinearLayout>
